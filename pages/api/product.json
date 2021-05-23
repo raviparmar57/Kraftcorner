@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Silk Thread Bangles - Black",
+        "images": [
+            "/images/Black/IMG20210311221845.jpg",
+            "/images/Black/IMG20210311221820.jpg"
+        ],
+        "price": 89.00,
+        "id": "1"
+    },
+    {
+        "name": "Silk Thread Bangles - BlueGreen",
+        "images": [
+            "/images/BlueGreen/IMG20210311221428.jpg",
+            "/images/BlueGreen/IMG20210311221400.jpg"
+        ],
+        "price": 75.00,
+        "id": "2"
+    },
+    {
+        "name": "Silk Thread Bangles - BluePink",
+        "images": [
+            "/images/BluePink/IMG20210228132814.jpg",
+            "/images/BluePink/IMG20210228132746.jpg"
+        ],
+        "price": 79.00,
+        "id": "3"
+    },
+    {
+        "name": "Silk Thread Bangles - DarkPink",
+        "images": [
+            "/images/DarkPink/IMG2021022813595484.jpg",
+            "/images/DarkPink/IMG20210228132952.jpg"
+        ],
+        "price": 75.00,
+        "id": "4"
+    },
+    {
+        "name": "Silk Thread Bangles - Gray",
+        "images": [
+            "/images/Gray/IMG20210311221628.jpg",
+            "/images/Gray/IMG20210311221519.jpg"
+        ],
+        "price": 79.00,
+        "id": "5"
+    },
+    {
+        "name": "Silk Thread Bangles - LigthPink",
+        "images": [
+            "/images/LightPink/IMG20210228132922.jpg",
+            "/images/LightPink/IMG20210228132851.jpg"
+        ],
+        "price": 75.00,
+        "id": "6"
+    },
+    {
+        "name": "Silk Thread Bangles - Purple",
+        "images": [
+            "/images/Purple/IMG20210228223249.jpg",
+            "/images/Purple/IMG_20210228_223343.jpg"
+        ],
+        "price": 75.00,
+        "id": "7"
+    },
+    {
+        "name": "Silk Thread Bangles - Red",
+        "images": [
+            "/images/Red/IMG_20210228_133100.jpg",
+            "/images/Red/IMG20210228132613.jpg"
+        ],
+        "price": 75.00,
+        "id": "8"
+    },
+    {
+        "name": "Silk Thread Bangles - White",
+        "images": [
+            "/images/White/IMG20210311221743.jpg",
+            "/images/White/IMG20210311221709.jpg"
+        ],
+        "price": 79.00,
+        "id": "9"
+    }
+]

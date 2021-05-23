@@ -1,0 +1,69 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.heroSlider {
+  height: 300px;
+}
+.heroSlider .slick-list {
+  height: 100%;
+  position: relative;
+}
+.heroSlider .slick-list .slick-slide > div {
+  position: relative;
+}
+.heroSlider .slick-list .slick-slide > div img {
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+}
+.heroSlider .slick-list .slick-slide > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 233, 226, 0.5);
+  z-index: 999999;
+}
+
+.heroSlider .slick-arrow {
+  display: none !important;
+}
+.heroSlider .slick-dots {
+  bottom: 25px;
+}
+
+.heroSlider .slick-dots li button:before {
+  font-size: 14px;
+  z-index: 99;
+}
+
+.testimonial .slick-list {
+  height: 100%;
+}
+
+.testimonial .slick-arrow {
+  display: none !important;
+}
+.testimonial .slick-dots {
+  bottom: -40px;
+}
+
+.testimonial .slick-dots li button:before {
+  font-size: 10px;
+  z-index: 99;
+}
+.react-responsive-modal-modal {
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .heroSlider {
+    height: 500px;
+  }
+}
