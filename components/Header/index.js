@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Header() {
     return (
         <header className="flex flex-col space-y-2 py-2 justify-center items-center w-full bg-gray-50">
-            <div className="text-2xl font-black text-white uppercase">
+            <div className="text-3xl font-black text-white uppercase">
                 <Link href="/" className="cursor-pointer">
                     Kraft Corner
                 </Link>

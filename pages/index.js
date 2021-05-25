@@ -84,7 +84,7 @@ export default function Home() {
 
         <div className="flow-root px-4 md:px-16 lg:px-24 mt-10 md:mt-20">
           <h1 className="text-center font-bold text-4xl">New Arrivals</h1>
-          <div className="-m-2 flex flex-wrap mt-8">
+          <div className="-m-4 flex flex-wrap mt-8">
             {products?.map(({ id, images, name, price }) =>
               <Product
                 key={id}
@@ -112,7 +112,7 @@ export default function Home() {
 
       <Footer />
 
-      <Modal open={open} onClose={onCloseModal} center classNames={{ modal: '' }}>
+      <Modal open={open} onClose={onCloseModal} center classNames={{ modal: 'w-full lg:w-1/2' }}>
         <OrderForm selecteItem={selecteItem} onFormSubmit={onFormSubmit} />
       </Modal>
 
