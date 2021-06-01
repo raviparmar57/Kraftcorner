@@ -76,15 +76,15 @@ export default function Home() {
           <Slider sliderType={HeroSliderCard} settings={settings} data={sliderdata} />
         </div>
 
-        <div className="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-4 md:space-y-0 mt-10 px-4 md:px-16 lg:px-24">
+        <div className="flex flex-col md:flex-row w-full space-x-0 md:space-x-8 space-y-4 md:space-y-0 mt-10 px-4 md:px-16 lg:px-24 max-w-6xl mx-auto">
           <InfoCard title="10+" description="Articles For Sale" />
           <InfoCard title="One-stop Shop" description="For Handmade Articles" />
           <InfoCard title="Customized" description="Articles As Per Requirement" />
         </div>
 
-        <div className="flow-root px-4 md:px-16 lg:px-24 mt-10 md:mt-20">
+        <div className="flow-root px-4 md:px-16 lg:px-24 mt-10 md:mt-20 max-w-6xl mx-auto">
           <h1 className="text-center font-bold text-4xl">New Arrivals</h1>
-          <div className="-m-4 flex flex-wrap mt-8">
+          <div className="-m-2 flex flex-wrap mt-8">
             {products?.map(({ id, images, name, price }) =>
               <Product
                 key={id}
@@ -99,8 +99,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center px-4 md:px-16 lg:px-24">
-          <div className="relative w-full lg:w-2/3 shadow-lg rounded-none bg-gray-100 testimonial-wrapper my-8 md:my-20 py-20 px-8 md:px-24 text-center">
+        <div className="flex justify-center items-center px-4 md:px-16 lg:px-24 max-w-6xl mx-auto">
+          <div className="relative w-full shadow-lg rounded-none bg-gray-100 testimonial-wrapper my-8 md:my-20 py-20 px-8 md:px-24 text-center">
             <span className="absolute top-10 left-10 text-6xl text-gray-50">&#8220;</span>
             <Slider sliderType={TestimonialSliderCard} settings={settings1} data={testimonialData} />
           </div>

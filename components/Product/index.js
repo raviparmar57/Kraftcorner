@@ -3,7 +3,7 @@ import React from 'react'
 export default function Product({ proudctImage, name, price, onOpenModal, onClickView }) {
     return (
         <div className="w-full md:w-1/2 lg:w-1/3">
-            <div className="m-4 shadow">
+            <div className="m-2 shadow">
                 <div className="h-60">
                     <img src={proudctImage[0]} alt={name} className="w-full h-full" />
                 </div>

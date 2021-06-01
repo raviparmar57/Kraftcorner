@@ -3,7 +3,7 @@ import React from 'react'
 export function HeroSliderCard({ image, name }) {
     return (
         <div>
-            <img src={image} alt={name} />
+            <img src={image} alt={name} className="mx-auto" />
         </div >
     )
 }
