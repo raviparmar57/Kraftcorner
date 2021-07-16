@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import { Modal } from 'react-responsive-modal';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -59,8 +60,29 @@ export default function Home() {
   }
 
   const onFormSubmit = (data) => {
-    console.log(data);
-    onCloseModal()
+    fetch('https://kraftkorner.herokuapp.com/send-order', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+      .then(() => {
+        toast.success('Your Order Place Successfully', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+        });
+      }
+      )
+      .catch(() => {
+        toast.error('Your Order Failed. Please Try Agin', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+        });
+      })
+    onCloseModal();
   }
 
   return (
@@ -117,7 +139,7 @@ export default function Home() {
       </Modal>
 
       <LightBox isOpen={isOpen} photoIndex={photoIndex} images={selecteItem?.proudctImage} setPhotoIndex={setPhotoIndex} onCloseLightBox={onCloseLightBox} />
-
+      <ToastContainer />
     </div >
   )
 }
